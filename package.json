@@ -1,0 +1,16 @@
+{
+  "name": "tarjeta-de-perfil-interactiva",
+  "version": "1.0.0",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "jquery": "^3.7.1",
+    "nodejs": "^0.0.0"
+  }
+}
