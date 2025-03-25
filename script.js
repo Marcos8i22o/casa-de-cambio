@@ -1,5 +1,6 @@
 const ultimasCotizacionesURL = 'https://api.frankfurter.dev/v1/latest';
 obtenerTiposDeCambio();
+configurarFecha();
 
 const $botonBuscarCambios = $('#buscar-btn');
 const $botonBorrarLista = $('#borrar-btn');
@@ -40,11 +41,8 @@ function obtenerTiposDeCambio() {
 }
 
 function obtenerFechaYBase() {
-  const fecha = $('#fecha-input').val();
-  const hoy = new Date().toISOString().split('T')[0];
-  fecha.setAttribute('max', hoy);
-  fecha.addEventListener('change', actualizar);
 
+  const fecha = $('#fecha-input').val();
   const base = $('#tipos-cambio').val();
 
   let URL = `https://api.frankfurter.dev/v1/${fecha}?base=${base}`;
@@ -78,4 +76,9 @@ function obtenerFechaYBase() {
     });
 
   $('#buscar-btn').attr('disabled', true);
+}
+
+function configurarFecha ()  {
+  const hoy = new Date().toISOString().split('T')[0];
+  $('#fecha-input').attr('max', hoy);
 }
