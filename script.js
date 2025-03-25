@@ -41,6 +41,10 @@ function obtenerTiposDeCambio() {
 
 function obtenerFechaYBase() {
   const fecha = $('#fecha-input').val();
+  const hoy = new Date().toISOString().split('T')[0];
+  fecha.setAttribute('max', hoy);
+  fecha.addEventListener('change', actualizar);
+
   const base = $('#tipos-cambio').val();
 
   let URL = `https://api.frankfurter.dev/v1/${fecha}?base=${base}`;
