@@ -47,6 +47,11 @@ function obtenerFechaYBase() {
 
   let URL = `https://api.frankfurter.dev/v1/${fecha}?base=${base}`;
 
+  if(!fecha){
+    URL = ultimasCotizacionesURL;
+    $('#mensaje').text("Obteniendo la última cotización disponible...")
+
+  }
   fetch(URL)
     .then((respuesta) => {
       if (!respuesta.ok) {
