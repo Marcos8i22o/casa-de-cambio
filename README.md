@@ -2,6 +2,9 @@
 
 Este proyecto es una aplicación web que permite consultar tasas de cambio de diferentes monedas en base a una API externa. Utiliza **Bootstrap** para el diseño responsivo y **jQuery** para manejar las interacciones y las peticiones a la API.
 
+![Casa de cambio](https://github.com/user-attachments/assets/e3990427-799f-40a1-8079-341472de2052)
+
+
 ## 🚀 Tecnologías utilizadas
 
 - HTML5
