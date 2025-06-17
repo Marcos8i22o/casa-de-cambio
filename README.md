@@ -52,15 +52,6 @@ Asegúrate de tener instalado [Node.js](https://nodejs.org/) y `npm` para gestio
 └── 📜 .gitignore         # Archivos y carpetas a ignorar en Git
 ```
 
-## 🛠️ Personalización
-
-Si deseas modificar los estilos, edita `styles.css`.
-Si quieres cambiar la lógica, revisa `script.js`.
-
-## 📌 Notas importantes
-
-- **No olvides ignorar `node_modules/`** en `.gitignore` para evitar subir archivos innecesarios.
-- Si experimentas problemas al cargar Bootstrap desde `node_modules`, considera usar el **CDN**.
 
 
 
